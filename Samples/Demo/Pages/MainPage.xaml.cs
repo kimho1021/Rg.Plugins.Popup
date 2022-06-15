@@ -81,5 +81,14 @@ namespace Demo.Pages
 
             await PopupNavigation.Instance.PushAsync(page);
         }
+
+        private async void OnOpenFirstPopupPage(System.Object sender, System.EventArgs e)
+        {
+            var page = new FirstPopupPage();
+
+            await PopupNavigation.Instance.PushAsync(page);
+
+        }
     }
+
 }

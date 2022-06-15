@@ -1,11 +1,13 @@
 ﻿using System.Windows.Input;
-
-using Rg.Plugins.Popup.Animations;
 using Rg.Plugins.Popup.Enums;
-using Rg.Plugins.Popup.Interfaces.Animations;
+using Rg.Plugins.Popup.Animations;
 using Rg.Plugins.Popup.Services;
 
 using Xamarin.Forms;
+using System;
+using Rg.Plugins.Popup;
+using System.Threading.Tasks;
+using Rg.Plugins.Popup.Interfaces.Animations;
 
 namespace Rg.Plugins.Popup.Pages
 {
@@ -329,3 +331,4 @@ namespace Rg.Plugins.Popup.Pages
         #endregion
     }
 }
+ 
