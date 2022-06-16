@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<rg:PopupPage
+    x:Class="Demo.Pages.TestPopupPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:rg="http://rotorgames.com"
+    HasSystemPadding="False">
+    <StackLayout
+        BackgroundColor="Red"
+        HeightRequest="300"
+        VerticalOptions="EndAndExpand">
+        <Label Text="I am Awesome BottomSheet as Popup" />
+        <Label
+            HorizontalOptions="CenterAndExpand"
+            Text="Welcome to Xamarin.Forms!"
+            VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+</rg:PopupPage>
+

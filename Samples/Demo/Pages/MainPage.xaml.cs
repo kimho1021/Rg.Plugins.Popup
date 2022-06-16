@@ -89,6 +89,11 @@ namespace Demo.Pages
             await PopupNavigation.Instance.PushAsync(page);
 
         }
+
+        private async void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await PopupNavigation.Instance.PushAsync(new TestPopupPage());
+        }
     }
 
 }

@@ -9,7 +9,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <Compile Update="**\*.xaml.cs" DependentUpon="%(Filename)" />
+    <Compile Update="**\*.xaml.cs" DependentUpon="TestPopupPage.xaml" />
     <None Remove="Resources\**\*.json" />
     <EmbeddedResource Include="Resources\**\*.json" />
   </ItemGroup>

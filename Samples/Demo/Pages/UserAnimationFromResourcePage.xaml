@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<rg:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
-              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              xmlns:rg="http://rotorgames.com"
-              x:Class="Demo.Pages.UserAnimationFromResourcePage"
-              Animation="{StaticResource PopupMoveRightAnimation}">
-    <StackLayout VerticalOptions="Center"
-                 HorizontalOptions="Center">
+<rg:PopupPage
+    x:Class="Demo.Pages.UserAnimationFromResourcePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:rg="http://rotorgames.com"
+    Animation="{StaticResource PopupMoveRightAnimation}">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Frame BackgroundColor="Silver">
             <StackLayout Spacing="20">
-                <Label HorizontalOptions="Center"
-                       Text="Animation using Resources"
-                       FontSize="16" />
-                <Button Text="Close"
-                        Clicked="OnClose" />
+                <Label
+                    FontSize="16"
+                    HorizontalOptions="Center"
+                    Text="Animation using Resources" />
+                <Button Clicked="OnClose" Text="Close" />
             </StackLayout>
         </Frame>
     </StackLayout>

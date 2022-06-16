@@ -1,10 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Demo.Pages.MainPage"
-             Title="Popup Demo"
-             BackgroundColor="White">
+<ContentPage
+    x:Class="Demo.Pages.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Popup Demo"
+    BackgroundColor="White">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Button">
@@ -14,19 +15,18 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ScrollView VerticalOptions="Fill">
-        <StackLayout Spacing="20" Margin="10, 15">
-            <Button Text="Open Popup" Clicked="OnOpenPupup" />
-            <Button Text="Open User Animation Popup" Clicked="OnUserAnimationPupup" />
-            <Button Text="Open System Offset Page" Clicked="OnOpenSystemOffsetPage" />
-            <Button Text="ListView Page" Clicked="OnOpenListViewPage" />
-            <Button Text="Open User Animation Popup using Resources"
-                    Clicked="OnOpenUserAnimationFromResource" />
-            <Button Text="Open User Animation Popup using Style"
-                    Clicked="OnOpenUserAnimationFromStyle" />
-            <Button Text="Open Settings" Clicked="OnOpenSettingsPage" />
-            <Button Text="Open MvvmPage" Clicked="OnOpenMvvmPage" />
-            <Button Text="Open TestCurrentViewController" Clicked="OnTestCurrentViewController"/>
-            <Button Text="Open FirstPopupPage" Clicked="OnOpenFirstPopupPage"/>
+        <StackLayout Margin="10,15" Spacing="20">
+            <Button Clicked="Button_Clicked" Text="TextPopup"/>
+            <Button Clicked="OnOpenPupup" Text="Open Popup" />
+            <Button Clicked="OnUserAnimationPupup" Text="Open User Animation Popup" />
+            <Button Clicked="OnOpenSystemOffsetPage" Text="Open System Offset Page" />
+            <Button Clicked="OnOpenListViewPage" Text="ListView Page" />
+            <Button Clicked="OnOpenUserAnimationFromResource" Text="Open User Animation Popup using Resources" />
+            <Button Clicked="OnOpenUserAnimationFromStyle" Text="Open User Animation Popup using Style" />
+            <Button Clicked="OnOpenSettingsPage" Text="Open Settings" />
+            <Button Clicked="OnOpenMvvmPage" Text="Open MvvmPage" />
+            <Button Clicked="OnTestCurrentViewController" Text="Open TestCurrentViewController" />
+            <Button Clicked="OnOpenFirstPopupPage" Text="Open FirstPopupPage" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
